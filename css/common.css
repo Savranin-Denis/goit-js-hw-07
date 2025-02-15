@@ -132,16 +132,16 @@ table {
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf');
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+  /* font-optical-sizing: auto; */
+  /* font-weight: <weight>; */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-VariableFont_wght.ttf');
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+  /* font-optical-sizing: auto; */
+  /* font-weight: <weight>; */
   font-style: normal;
 }
 
@@ -163,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 0;
+  padding: 24px 0;
 }
 
 .item {
@@ -212,8 +212,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-
-  padding: 0;
+  padding: 100px 0;
   margin: 0 auto;
 }
 
@@ -230,9 +229,6 @@ body {
 /* Завдання 3 */
 
 #name-input {
-  width: 360px;
-  height: 40px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -241,6 +237,15 @@ body {
   padding: 8px 16px;
   margin-top: 24px;
   margin-bottom: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  outline: none;
+}
+
+#name-input:hover {
+  border: 1px solid #000000;
 }
 
 h1 {
@@ -252,3 +257,59 @@ h1 {
 }
 
 /* Завдання 4 */
+
+.login-form {
+  padding: 24px 0;
+}
+
+.login-form > label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  gap: 8px;
+}
+
+.login-form > label:first-child {
+  margin-bottom: 8px;
+}
+
+.login-form > label > input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+}
+
+.login-form > label > input:hover {
+  border: 1px solid #000000;
+}
+
+.login-form > button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  margin-top: 16px;
+}
+
+.login-form > button:hover {
+  background: #6c8cff;
+}
